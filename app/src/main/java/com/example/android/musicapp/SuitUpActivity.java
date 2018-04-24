@@ -2,6 +2,7 @@ package com.example.android.musicapp;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
@@ -29,9 +30,9 @@ public class SuitUpActivity extends AppCompatActivity {
 
         //populate it with the content you created
         for(int index = 0; index < suitUpSongs.size();index++){
-            TextView albumView = new TextView(this);
-            albumView.setText(suitUpSongs.get(index));
-            root.addView(albumView);
+            TextView songView = new TextView(this);
+            songView.setText(suitUpSongs.get(index));
+            root.addView(songView);
 
         }
     }

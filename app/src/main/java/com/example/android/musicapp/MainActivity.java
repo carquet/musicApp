@@ -21,6 +21,15 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(suitUpIntent);
             }
         });
+
+        TextView yellowUmbrellaButton = (TextView) findViewById(R.id.yellow_umbrella_view);
+        yellowUmbrellaButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent yellowUmbrellaIntent = new Intent(MainActivity.this, YellowUmbrellaActivity.class);
+                startActivity(yellowUmbrellaIntent);
+            }
+        });
     }
 
 
