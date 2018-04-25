@@ -7,6 +7,17 @@
     android:orientation="vertical"
     android:id="@+id/rootView"
     tools:context=".SuitUpActivity">
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:src="@drawable/suitup"
+        android:background="#000"/>
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/songView">
+
+    </ListView>
 
 
 </LinearLayout>

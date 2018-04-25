@@ -18,7 +18,7 @@
         </activity>
         <activity
             android:name=".SuitUpActivity"
-            android:label="Suit Up" />
+            android:label="Suit Up"/>
         <activity
             android:name=".YellowUmbrellaActivity"
             android:label="Yellow Umbrella" />
