@@ -27,7 +27,7 @@ public class BlueHornActivity extends AppCompatActivity {
         blueHornSongs.add("Time After Time");
 
         //1. create an adapter that loops through the array and put them into a bootstrap list item
-        ArrayAdapter<String> itemsAdapter = new ArrayAdapter<>(this, android.R.layout.simple_list_item_1, blueHornSongs);
+        ArrayAdapter<String> itemsAdapter = new ArrayAdapter<>(this, R.layout.list_item, blueHornSongs);
 
         //2. grab the view
         ListView songListView = (ListView) findViewById(R.id.songView);
