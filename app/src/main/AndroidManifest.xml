@@ -19,8 +19,14 @@
         <activity
             android:name=".SuitUpActivity"
             android:label="Suit Up" />
-        <activity android:name=".YellowUmbrellaActivity"
-            android:label="Yellow Umbrella"/>
+        <activity
+            android:name=".YellowUmbrellaActivity"
+            android:label="Yellow Umbrella" />
+        <activity
+            android:name=".BlueHornActivity"
+            android:label="Blue French Horn" />
+        <activity android:name=".LegendaryActivity"
+            android:label="Legendary"/>
     </application>
 
 </manifest>

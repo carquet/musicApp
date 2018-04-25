@@ -11,7 +11,7 @@
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="@color/colorAccent"
+        android:background="#792a69"
         android:layout_weight="3">
         <TextView
             android:layout_width="wrap_content"
@@ -23,7 +23,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical"
-        android:background="@color/colorPrimary"
+        android:background="#792a69"
         android:layout_weight="1">
 
         <LinearLayout
@@ -48,7 +48,7 @@
                 android:layout_margin="5dp"
                 android:layout_weight="1"
                 android:text="yellow umbrella"
-                android:background="@color/colorAccent"/>
+                android:background="#f7eb04"/>
 
         </LinearLayout>
         <LinearLayout
@@ -64,7 +64,7 @@
                 android:layout_weight="1"
                 android:layout_margin="5dp"
                 android:text="blue horn"
-                android:background="@color/colorAccent" />
+                android:background="#4700fa" />
             <TextView
                 android:id="@+id/legen_dary_view"
                 android:layout_width="match_parent"
@@ -72,7 +72,7 @@
                 android:layout_margin="5dp"
                 android:layout_weight="1"
                 android:text="legendary!"
-                android:background="@color/colorAccent"/>
+                android:background="#a9811a"/>
 
         </LinearLayout>
 

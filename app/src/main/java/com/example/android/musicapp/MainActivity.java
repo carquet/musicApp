@@ -13,6 +13,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        //SUITUP ACTIVITY
         TextView suitUpButton = (TextView) findViewById(R.id.suit_up_view);
         suitUpButton.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -22,12 +23,33 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+        //YELLOW UMBRELLA ACTIVITY
         TextView yellowUmbrellaButton = (TextView) findViewById(R.id.yellow_umbrella_view);
         yellowUmbrellaButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent yellowUmbrellaIntent = new Intent(MainActivity.this, YellowUmbrellaActivity.class);
                 startActivity(yellowUmbrellaIntent);
+            }
+        });
+
+        //FRENCH BLUE HORN ACTIVITY
+        TextView blueHornButton = (TextView) findViewById(R.id.blue_horn_view);
+        blueHornButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent blueHornIntent = new Intent(MainActivity.this, BlueHornActivity.class);
+                startActivity(blueHornIntent);
+            }
+        });
+
+        //LEGENDARY ACTIVITY
+        TextView legendaryButton = (TextView) findViewById(R.id.legen_dary_view);
+        legendaryButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent legendaryIntent = new Intent(MainActivity.this, LegendaryActivity.class);
+                startActivity(legendaryIntent);
             }
         });
     }
