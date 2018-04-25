@@ -6,6 +6,18 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:id="@+id/rootView"
-    tools:context=".LegendaryActivity">
+    tools:context=".SuitUpActivity">
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:src="@drawable/dary"
+        android:background="#a9811a"/>
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/songView">
+
+    </ListView>
+
 
 </LinearLayout>
