@@ -16,18 +16,15 @@ public class BlueHornActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_blue_horn);
 
-        ArrayList<String> blueHornSongs = new ArrayList<>();
-        blueHornSongs.add("Someone like you");
-        blueHornSongs.add("Say something");
-        blueHornSongs.add("Everybody Hurts");
-        blueHornSongs.add("Nothing Compares 2 U");
-        blueHornSongs.add("Say Something");
-        blueHornSongs.add("Angels");
-        blueHornSongs.add("Wish You Were Here");
-        blueHornSongs.add("Time After Time");
+        ArrayList<Song> songsList = new ArrayList<>();
+        songsList.add(new Song(R.drawable.album,"Someone like you","Adèle"));
+        songsList.add(new Song(R.drawable.album,"Say Something","A great Big World"));
+        songsList.add(new Song(R.drawable.album,"Everybody hurts","R.E.M"));
+        songsList.add(new Song(R.drawable.album,"Nothing Compared To You","Senead O´Connor"));
+        songsList.add(new Song(R.drawable.album,"Pink Floyd","Wish you were here"));
 
         //1. create an adapter that loops through the array and put them into a bootstrap list item
-        ArrayAdapter<String> itemsAdapter = new ArrayAdapter<>(this, R.layout.list_item, blueHornSongs);
+        SongAdapter itemsAdapter = new SongAdapter(this, songsList);
 
         //2. grab the view
         ListView songListView = (ListView) findViewById(R.id.songView);
