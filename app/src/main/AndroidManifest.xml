@@ -18,15 +18,18 @@
         </activity>
         <activity
             android:name=".SuitUpActivity"
-            android:label="Suit Up"/>
+            android:label="Suit Up" />
         <activity
             android:name=".YellowUmbrellaActivity"
             android:label="Yellow Umbrella" />
         <activity
             android:name=".BlueHornActivity"
             android:label="Blue French Horn" />
-        <activity android:name=".LegendaryActivity"
-            android:label="Legendary"/>
+        <activity
+            android:name=".LegendaryActivity"
+            android:label="Legendary" />
+        <activity android:name=".NowPlayingActivity"
+            android:label="Now playing"/>
     </application>
 
 </manifest>
