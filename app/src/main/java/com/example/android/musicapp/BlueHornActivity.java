@@ -3,6 +3,7 @@ package com.example.android.musicapp;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
@@ -19,7 +20,7 @@ public class BlueHornActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_blue_horn);
 
-        ArrayList<Song> songsList = new ArrayList<>();
+        final ArrayList<Song> songsList = new ArrayList<>();
         songsList.add(new Song(R.drawable.album,"Someone like you","Adèle"));
         songsList.add(new Song(R.drawable.album,"Say Something","A great Big World"));
         songsList.add(new Song(R.drawable.album,"Everybody hurts","R.E.M"));
@@ -43,10 +44,11 @@ public class BlueHornActivity extends AppCompatActivity {
         long: The row id of the item that was clicked.
          */
         songListView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+
             @Override
             public void onItemClick(AdapterView<?> adapterView, View view,
                                     int position, long id) {
-
+                
                 Song currentSong = songsList.get(position);
                 String artist = currentSong.getmArtist();
                 String title = currentSong.getmTitle();
@@ -55,6 +57,7 @@ public class BlueHornActivity extends AppCompatActivity {
                 listViewIntent.putExtra("message", artist);
                 listViewIntent.putExtra("message2", title);
                 startActivity(listViewIntent);
+
             }
 
         });

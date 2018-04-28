@@ -28,7 +28,8 @@
         <activity
             android:name=".LegendaryActivity"
             android:label="Legendary" />
-        <activity android:name=".NowPlayingActivity"></activity>
+        <activity android:name=".NowPlayingActivity"
+            android:label="Now playing"/>
     </application>
 
 </manifest>
