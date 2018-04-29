@@ -11,13 +11,12 @@
         android:layout_width="match_parent"
         android:layout_height="100dp"
         android:src="@drawable/bluehorn"
-        android:background="#4700fa"/>
+        android:background="#fff"/>
     <ListView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:id="@+id/songView">
 
     </ListView>
-
 
 </LinearLayout>

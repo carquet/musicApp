@@ -1,7 +1,10 @@
 package com.example.android.musicapp;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.LinearLayout;
 import android.widget.ListView;
@@ -16,22 +19,48 @@ public class LegendaryActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_legendary);
 
-        //Set content
-        ArrayList<String> legendarySongs = new ArrayList<>();
-        legendarySongs.add("Born to Be Wild");
-        legendarySongs.add("Smooth Criminal");
-        legendarySongs.add("My Way");
-        legendarySongs.add("New York, New York");
-        legendarySongs.add("My blue swede shoes");
-        legendarySongs.add("Halleluya");
+        final ArrayList<Song> songsList = new ArrayList<>();
+        songsList.add(new Song(R.drawable.album,"Born to Be Wild","SteppenWolf"));
+        songsList.add(new Song(R.drawable.album,"Smooth Criminal","Michael Jackson"));
+        songsList.add(new Song(R.drawable.album,"My Way","Frank Sinatra"));
+        songsList.add(new Song(R.drawable.album,"New York, New York","Liza Minnelli"));
+        songsList.add(new Song(R.drawable.album,"My blue swede shoes","Elvis Presley"));
+        songsList.add(new Song(R.drawable.album,"hallelujah","Leonard Cohen"));
 
         //1. create an adapter that loops through the array and put them into a bootstrap list item
-        ArrayAdapter<String> itemsAdapter = new ArrayAdapter<>(this, android.R.layout.simple_list_item_1, legendarySongs);
+        SongAdapter itemsAdapter = new SongAdapter(this, songsList);
 
         //2. grab the view
         ListView songListView = (ListView) findViewById(R.id.songView);
 
         //3. plug the adapter onto the view
         songListView.setAdapter(itemsAdapter);
+
+        //Set item click listener on each item
+        /*
+        AdapterView: The AdapterView where the click happened
+        View: The view within the AdapterView that was clicked (this will be a view provided by the adapter)
+        int: The position of the view in the adapter.
+        long: The row id of the item that was clicked.
+         */
+        songListView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+
+            @Override
+            public void onItemClick(AdapterView<?> adapterView, View view,
+                                    int position, long id) {
+
+                Song currentSong = songsList.get(position);
+                String artist = currentSong.getmArtist();
+                String title = currentSong.getmTitle();
+
+                Intent listViewIntent = new Intent(LegendaryActivity.this, NowPlayingActivity.class);
+                listViewIntent.putExtra("message", artist);
+                listViewIntent.putExtra("message2", title);
+                startActivity(listViewIntent);
+
+            }
+
+        });
+
     }
 }

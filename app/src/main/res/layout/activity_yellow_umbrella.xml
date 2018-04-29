@@ -10,14 +10,13 @@
     <ImageView
         android:layout_width="match_parent"
         android:layout_height="100dp"
-        android:src="@drawable/umbrella_1588167_640"
-        android:background="#f7eb04"/>
+        android:src="@drawable/yellowumbrella"
+        android:background="#ffd400"/>
     <ListView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:id="@+id/songView">
 
     </ListView>
-
 
 </LinearLayout>
