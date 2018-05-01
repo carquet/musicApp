@@ -56,7 +56,7 @@ public class YellowUmbrellaActivity extends AppCompatActivity {
                 int image = currentSong.getmAlbumImage();
 
                 Intent listViewIntent = new Intent(YellowUmbrellaActivity.this, NowPlayingActivity.class);
-                listViewIntent.putExtra("artiste", artist);
+                listViewIntent.putExtra("artist", artist);
                 listViewIntent.putExtra("title", title);
                 listViewIntent.putExtra("image", image);
                 startActivity(listViewIntent);

@@ -51,14 +51,14 @@ public class BlueHornActivity extends AppCompatActivity {
                                     int position, long id) {
                 
                 Song currentSong = songsList.get(position);
-                String artist = currentSong.getmArtist();
                 String title = currentSong.getmTitle();
+                String artist = currentSong.getmArtist();
                 int image = currentSong.getmAlbumImage();
 
 
                 Intent listViewIntent = new Intent(BlueHornActivity.this, NowPlayingActivity.class);
-                listViewIntent.putExtra("artiste", artist);
                 listViewIntent.putExtra("title", title);
+                listViewIntent.putExtra("artist", artist);
                 listViewIntent.putExtra("image", image);
                 startActivity(listViewIntent);
 
