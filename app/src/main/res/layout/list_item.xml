@@ -9,32 +9,41 @@
         android:id="@+id/album_image"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_margin="5dp"
         android:layout_weight="1"
         tools:src="@drawable/umbrella_1588167_640"/>
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_margin="10dp"
         android:layout_weight="1">
         <TextView
             android:id="@+id/title"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            tools:text="artist"/>
+            android:textAllCaps="true"
+            android:fontFamily="sans-serif-condensed"
+            android:textSize="15sp"
+            android:elegantTextHeight="true"
+            tools:text="title"/>
         <TextView
             android:id="@+id/artist"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_below="@+id/title"
-            tools:text="title"/>
+            android:textStyle="bold"
+            tools:text="artist"/>
     </RelativeLayout>
 
     <Button
         android:id="@+id/play_button"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_margin="10dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:layout_gravity="center_vertical"
         android:layout_weight="1"
-        android:text="play"
-        android:focusable="false"/>
+        android:focusable="false"
+        android:text="play" />
 
 </LinearLayout>
