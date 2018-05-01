@@ -52,10 +52,12 @@ public class LegendaryActivity extends AppCompatActivity {
                 Song currentSong = songsList.get(position);
                 String artist = currentSong.getmArtist();
                 String title = currentSong.getmTitle();
+                int image = currentSong.getmAlbumImage();
 
                 Intent listViewIntent = new Intent(LegendaryActivity.this, NowPlayingActivity.class);
-                listViewIntent.putExtra("message", artist);
-                listViewIntent.putExtra("message2", title);
+                listViewIntent.putExtra("artiste", artist);
+                listViewIntent.putExtra("title", title);
+                listViewIntent.putExtra("image", image);
                 startActivity(listViewIntent);
 
             }

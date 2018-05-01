@@ -4,7 +4,23 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".NowPlayingActivity">
+    android:orientation="horizontal"
+    tools:context=".NowPlayingActivity"
+    android:id="@+id/rootView">
+    <ImageView
+        android:id="@+id/now_playing_image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:id="@+id/now_playing_title"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        tools:text="title"/>
+    <TextView
+        android:id="@+id/now_playing_artist"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        tools:text="artist"/>
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
