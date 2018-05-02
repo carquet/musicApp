@@ -18,18 +18,43 @@
         </activity>
         <activity
             android:name=".SuitUpActivity"
-            android:label="Suit Up" />
+            android:label="Suit Up"
+            android:parentActivityName=".MainActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity"/>
+        </activity>
         <activity
             android:name=".YellowUmbrellaActivity"
-            android:label="Yellow Umbrella" />
+            android:label="Yellow Umbrella"
+            android:parentActivityName=".MainActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity"/>
+        </activity>
         <activity
             android:name=".BlueHornActivity"
-            android:label="Blue French Horn" />
+            android:label="Blue French Horn"
+            android:parentActivityName=".MainActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity"/>
+        </activity>
         <activity
             android:name=".LegendaryActivity"
-            android:label="Legendary" />
+            android:label="Legendary"
+            android:parentActivityName=".MainActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity"/>
+        </activity>
         <activity android:name=".NowPlayingActivity"
-            android:label="Now playing"/>
+            android:label="Now playing"
+            android:parentActivityName=".MainActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity"/>
+        </activity>
     </application>
 
 </manifest>
