@@ -13,25 +13,26 @@ import android.widget.TextView;
 
 import java.util.ArrayList;
 
-public class SongAdapter extends ArrayAdapter<Song>{
+public class SongAdapter extends ArrayAdapter<Song> {
 
-    public SongAdapter(Activity context, ArrayList<Song> songsList){
+    public SongAdapter(Activity context, ArrayList<Song> songsList) {
         //we initialize the ArrayAdapter's internal storage for the context and the list.
         super(context, 0, songsList);
     }
 
     /**
      * Provides a view for the Adapter
-     * @param position the position in the list of data that should be displayed in the list view item
+     *
+     * @param position    the position in the list of data that should be displayed in the list view item
      * @param convertView the recycled view to populate
-     * @param parent Viewgroup that is used for inflation
+     * @param parent      Viewgroup that is used for inflation
      * @return the View for the position in the AdapterView
      */
     @Override
-    public View getView(int position, View convertView,  ViewGroup parent) {
+    public View getView(int position, View convertView, ViewGroup parent) {
         //check if the existing view is being used, otherwise inflate the view
         View listItemView = convertView;
-        if(listItemView == null){
+        if (listItemView == null) {
             listItemView = LayoutInflater.from(getContext()).inflate(
                     R.layout.list_item, parent, false);
         }

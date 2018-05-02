@@ -13,12 +13,11 @@ public class Song {
 
 
     /**
-     *
-     * @param Album is the id of the resource
-     * @param title is the title of the song
+     * @param Album  is the id of the resource
+     * @param title  is the title of the song
      * @param artist is the name of the artist
      */
-    public Song(int Album, String title, String artist){
+    public Song(int Album, String title, String artist) {
 
         mAlbumResourceId = Album;
         mTitle = title;
@@ -26,15 +25,15 @@ public class Song {
 
     }
 
-    public int getmAlbumImage(){
+    public int getmAlbumImage() {
         return mAlbumResourceId;
     }
 
-    public String getmTitle(){
+    public String getmTitle() {
         return mTitle;
     }
 
-    public  String getmArtist(){
+    public String getmArtist() {
         return mArtist;
     }
 

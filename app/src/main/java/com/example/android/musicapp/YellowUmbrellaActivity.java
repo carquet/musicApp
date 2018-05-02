@@ -20,13 +20,13 @@ public class YellowUmbrellaActivity extends AppCompatActivity {
         setContentView(R.layout.activity_yellow_umbrella);
 
         final ArrayList<Song> songsList = new ArrayList<>();
-        songsList.add(new Song(R.drawable.album,"I will always love you","Whitney Huston"));
-        songsList.add(new Song(R.drawable.album,"My heart will go on","Céline Dion"));
-        songsList.add(new Song(R.drawable.album,"Unforgettable","Nat King Cole"));
-        songsList.add(new Song(R.drawable.album,"You're the one that I want","Grease"));
-        songsList.add(new Song(R.drawable.album,"I've been loving you","Otis Redding"));
-        songsList.add(new Song(R.drawable.album,"Hymne à l'amour","Edith Piaf"));
-        songsList.add(new Song(R.drawable.album,"La déclaration d'amour","France Gall"));
+        songsList.add(new Song(R.drawable.album, "I will always love you", "Whitney Huston"));
+        songsList.add(new Song(R.drawable.album, "My heart will go on", "Céline Dion"));
+        songsList.add(new Song(R.drawable.album, "Unforgettable", "Nat King Cole"));
+        songsList.add(new Song(R.drawable.album, "You're the one that I want", "Grease"));
+        songsList.add(new Song(R.drawable.album, "I've been loving you", "Otis Redding"));
+        songsList.add(new Song(R.drawable.album, "Hymne à l'amour", "Edith Piaf"));
+        songsList.add(new Song(R.drawable.album, "La déclaration d'amour", "France Gall"));
 
         //1. create an adapter that loops through the array and put them into a bootstrap list item
         SongAdapter itemsAdapter = new SongAdapter(this, songsList);

@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#792a69"
     android:orientation="vertical"
     tools:context=".MainActivity">
 
@@ -11,68 +12,92 @@
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="#792a69"
-        android:layout_weight="3">
+        android:layout_weight="3"
+        android:padding="10dp">
+
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Laetitia Carquet"/>
+            android:layout_above="@+id/name"
+            android:text="@string/welcome"
+            android:textAllCaps="true"
+            android:textColor="@color/white"
+            android:textSize="10sp" />
+
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="Laetitia Carquet"
+            android:textColor="@color/white"
+            android:textSize="30sp" />
+
+        <TextView
+            android:layout_width="246dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="@id/profile_photo"
+            android:layout_below="@+id/name"
+            android:text="@string/instruction_home_page"
+            android:textColor="@color/white"
+            android:textSize="12sp" />
+
+        <ImageView
+            android:id="@+id/profile_photo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_margin="5dp"
+            android:src="@drawable/laeti" />
     </RelativeLayout>
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:orientation="vertical"
-        android:background="#792a69"
-        android:layout_weight="1">
+        android:layout_weight="1"
+        android:orientation="vertical">
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:padding="5dp"
             android:layout_weight="1"
-            android:orientation="horizontal">
+            android:orientation="horizontal"
+            android:padding="5dp">
+
             <TextView
                 android:id="@+id/suit_up_view"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:layout_margin="5dp"
-                android:background="#000"
-                android:textColor="#FFF"
-                android:text="Suit up"/>
+                style="@style/home_selection"
+                android:background="@color/black"
+                android:text="@string/suit_up" />
+
             <TextView
                 android:id="@+id/yellow_umbrella_view"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_margin="5dp"
-                android:layout_weight="1"
-                android:text="yellow umbrella"
-                android:background="#f7eb04"/>
+                style="@style/home_selection"
+                android:background="@color/yellow"
+                android:text="@string/yellow_umbrella"
+                android:textColor="@color/black" />
 
         </LinearLayout>
+
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:padding="5dp"
             android:layout_weight="1"
-            android:orientation="horizontal">
+            android:orientation="horizontal"
+            android:padding="5dp">
+
             <TextView
                 android:id="@+id/blue_horn_view"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:layout_margin="5dp"
-                android:text="blue horn"
-                android:background="#4700fa" />
+                style="@style/home_selection"
+                android:background="@color/blue_horn"
+                android:text="@string/blue_french_horn" />
+
             <TextView
                 android:id="@+id/legen_dary_view"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_margin="5dp"
-                android:layout_weight="1"
-                android:text="legendary!"
-                android:background="#a9811a"/>
+                style="@style/home_selection"
+                android:background="@color/gold"
+                android:text="@string/legendary" />
 
         </LinearLayout>
 

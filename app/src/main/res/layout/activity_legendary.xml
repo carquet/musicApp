@@ -2,20 +2,28 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rootView"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:id="@+id/rootView"
     tools:context=".SuitUpActivity">
+
     <ImageView
         android:layout_width="match_parent"
         android:layout_height="100dp"
-        android:src="@drawable/dary"
-        android:background="#a9811a"/>
-    <ListView
+        android:background="@color/white"
+        android:src="@drawable/dary" />
+
+    <TextView
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:id="@+id/songView">
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:text="@string/instruction_legendary" />
+
+    <ListView
+        android:id="@+id/songView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
 
     </ListView>
 

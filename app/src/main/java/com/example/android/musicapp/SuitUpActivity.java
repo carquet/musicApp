@@ -20,13 +20,13 @@ public class SuitUpActivity extends AppCompatActivity {
         setContentView(R.layout.activity_suit_up);
 
         final ArrayList<Song> songsList = new ArrayList<>();
-        songsList.add(new Song(R.drawable.album,"It's been a hard day work","The Beatles"));
-        songsList.add(new Song(R.drawable.album,"My Shot","Lin Manuel Miranda"));
-        songsList.add(new Song(R.drawable.album,"Hoy no me quiero levantar","Mecano"));
-        songsList.add(new Song(R.drawable.album,"Work work work","Rihanna"));
-        songsList.add(new Song(R.drawable.album,"Le travail c'est la santé","Henri Salvador"));
-        songsList.add(new Song(R.drawable.album,"Who runs the world","Beyoncé"));
-        songsList.add(new Song(R.drawable.album,"Confident","Demi Lovato"));
+        songsList.add(new Song(R.drawable.album, "It's been a hard day work", "The Beatles"));
+        songsList.add(new Song(R.drawable.album, "My Shot", "Lin Manuel Miranda"));
+        songsList.add(new Song(R.drawable.album, "Hoy no me quiero levantar", "Mecano"));
+        songsList.add(new Song(R.drawable.album, "Work work work", "Rihanna"));
+        songsList.add(new Song(R.drawable.album, "Le travail c'est la santé", "Henri Salvador"));
+        songsList.add(new Song(R.drawable.album, "Who runs the world", "Beyoncé"));
+        songsList.add(new Song(R.drawable.album, "Confident", "Demi Lovato"));
 
         //1. create an adapter that loops through the array and put them into a bootstrap list item
         SongAdapter itemsAdapter = new SongAdapter(this, songsList);

@@ -20,12 +20,12 @@ public class LegendaryActivity extends AppCompatActivity {
         setContentView(R.layout.activity_legendary);
 
         final ArrayList<Song> songsList = new ArrayList<>();
-        songsList.add(new Song(R.drawable.album,"Born to Be Wild","SteppenWolf"));
-        songsList.add(new Song(R.drawable.album,"Smooth Criminal","Michael Jackson"));
-        songsList.add(new Song(R.drawable.album,"My Way","Frank Sinatra"));
-        songsList.add(new Song(R.drawable.album,"New York, New York","Liza Minnelli"));
-        songsList.add(new Song(R.drawable.album,"My blue swede shoes","Elvis Presley"));
-        songsList.add(new Song(R.drawable.album,"hallelujah","Leonard Cohen"));
+        songsList.add(new Song(R.drawable.album, "Born to Be Wild", "SteppenWolf"));
+        songsList.add(new Song(R.drawable.album, "Smooth Criminal", "Michael Jackson"));
+        songsList.add(new Song(R.drawable.album, "My Way", "Frank Sinatra"));
+        songsList.add(new Song(R.drawable.album, "New York, New York", "Liza Minnelli"));
+        songsList.add(new Song(R.drawable.album, "My blue swede shoes", "Elvis Presley"));
+        songsList.add(new Song(R.drawable.album, "hallelujah", "Leonard Cohen"));
 
         //1. create an adapter that loops through the array and put them into a bootstrap list item
         SongAdapter itemsAdapter = new SongAdapter(this, songsList);

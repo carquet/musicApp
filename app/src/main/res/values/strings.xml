@@ -1,5 +1,16 @@
 <resources>
     <string name="app_name">MusicApp</string>
+    <string name="welcome">welcome</string>
+    <string name="instruction_home_page">Choose the music most adapted to your mood. How do you feel, today?</string>
     <string name="title">title</string>
     <string name="artist">artist</string>
+    <string name="suit_up">Suit up</string>
+    <string name="yellow_umbrella">yellow umbrella</string>
+    <string name="blue_french_horn">blue horn</string>
+    <string name="legendary">legendary!</string>
+    <string name="instruction_blue_horn">Are you longing for something, feel like having a chocolate dinner and wine. This is your selection!</string>
+    <string name="instruction_yellow_umbrella">You\'ll find here a selection of the most romantic songs</string>
+    <string name="instruction_suit_up">Ready to take up that challenge, to show them who\'s the boss, can you go the distance.This selection will pump you up!</string>
+    <string name="instruction_legendary">Feel like listening to classics: it\'s going to be ... wait for it ...I hope you are not lactose intolerant because the other half of this word is dary! </string>
+    <string name="instruction_now_playing">You are now listening to: </string>
 </resources>

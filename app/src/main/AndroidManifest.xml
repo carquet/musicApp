@@ -18,42 +18,43 @@
         </activity>
         <activity
             android:name=".SuitUpActivity"
-            android:label="Suit Up"
+            android:label="@string/suit_up"
             android:parentActivityName=".MainActivity">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value=".MainActivity"/>
+                android:value=".MainActivity" />
         </activity>
         <activity
             android:name=".YellowUmbrellaActivity"
-            android:label="Yellow Umbrella"
+            android:label="@string/yellow_umbrella"
             android:parentActivityName=".MainActivity">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value=".MainActivity"/>
+                android:value=".MainActivity" />
         </activity>
         <activity
             android:name=".BlueHornActivity"
-            android:label="Blue French Horn"
+            android:label="@string/blue_french_horn"
             android:parentActivityName=".MainActivity">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value=".MainActivity"/>
+                android:value=".MainActivity" />
         </activity>
         <activity
             android:name=".LegendaryActivity"
-            android:label="Legendary"
+            android:label="@string/legendary"
             android:parentActivityName=".MainActivity">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value=".MainActivity"/>
+                android:value=".MainActivity" />
         </activity>
-        <activity android:name=".NowPlayingActivity"
+        <activity
+            android:name=".NowPlayingActivity"
             android:label="Now playing"
             android:parentActivityName=".MainActivity">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value=".MainActivity"/>
+                android:value=".MainActivity" />
         </activity>
     </application>
 
