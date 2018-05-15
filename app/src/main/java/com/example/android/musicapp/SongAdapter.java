@@ -57,6 +57,9 @@ public class SongAdapter extends ArrayAdapter<Song> {
         TextView artistTextView = (TextView) listItemView.findViewById(R.id.artist);
         artistTextView.setText(currentSong.getmArtist());
 
+        //SONG PLAYED
+        int raw = currentSong.getmRawResource();
+
         return listItemView;
     }
 }

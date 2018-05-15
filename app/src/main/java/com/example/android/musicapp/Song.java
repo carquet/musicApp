@@ -10,6 +10,8 @@ public class Song {
     private String mTitle;
     //name of the artist
     private String mArtist;
+    //raw resource for the song
+    private int mRawResource;
 
 
     /**
@@ -25,6 +27,15 @@ public class Song {
 
     }
 
+    public Song(int Album, String title, String artist, int rawResource) {
+
+        mAlbumResourceId = Album;
+        mTitle = title;
+        mArtist = artist;
+        mRawResource = rawResource;
+
+    }
+
     public int getmAlbumImage() {
         return mAlbumResourceId;
     }
@@ -35,6 +46,10 @@ public class Song {
 
     public String getmArtist() {
         return mArtist;
+    }
+
+    public int getmRawResource(){
+        return mRawResource;
     }
 
 }
