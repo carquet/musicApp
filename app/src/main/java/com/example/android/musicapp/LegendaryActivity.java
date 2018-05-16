@@ -20,12 +20,12 @@ public class LegendaryActivity extends AppCompatActivity {
         setContentView(R.layout.activity_legendary);
 
         final ArrayList<Song> songsList = new ArrayList<>();
-        songsList.add(new Song(R.drawable.album, "Born to Be Wild", "SteppenWolf"));
-        songsList.add(new Song(R.drawable.album, "Smooth Criminal", "Michael Jackson"));
-        songsList.add(new Song(R.drawable.album, "My Way", "Frank Sinatra"));
-        songsList.add(new Song(R.drawable.album, "New York, New York", "Liza Minnelli"));
-        songsList.add(new Song(R.drawable.album, "My blue swede shoes", "Elvis Presley"));
-        songsList.add(new Song(R.drawable.album, "hallelujah", "Leonard Cohen"));
+        songsList.add(new Song(R.drawable.album, "Born to Be Wild", "SteppenWolf", R.raw.song_two));
+        songsList.add(new Song(R.drawable.album, "Smooth Criminal", "Michael Jackson", R.raw.song_one));
+        songsList.add(new Song(R.drawable.album, "My Way", "Frank Sinatra", R.raw.song_one));
+        songsList.add(new Song(R.drawable.album, "New York, New York", "Liza Minnelli",R.raw.song_two));
+        songsList.add(new Song(R.drawable.album, "My blue swede shoes", "Elvis Presley", R.raw.song_three));
+        songsList.add(new Song(R.drawable.album, "hallelujah", "Leonard Cohen", R.raw.song_two));
 
         //1. create an adapter that loops through the array and put them into a bootstrap list item
         SongAdapter itemsAdapter = new SongAdapter(this, songsList);
@@ -52,14 +52,15 @@ public class LegendaryActivity extends AppCompatActivity {
                 Song currentSong = songsList.get(position);
                 String artist = currentSong.getmArtist();
                 String title = currentSong.getmTitle();
+                int raw = currentSong.getmRawResource();
                 int image = currentSong.getmAlbumImage();
 
                 Intent listViewIntent = new Intent(LegendaryActivity.this, NowPlayingActivity.class);
                 listViewIntent.putExtra("artist", artist);
                 listViewIntent.putExtra("title", title);
                 listViewIntent.putExtra("image", image);
+                listViewIntent.putExtra("raw", raw);
                 startActivity(listViewIntent);
-
             }
 
         });

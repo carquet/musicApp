@@ -20,13 +20,13 @@ public class SuitUpActivity extends AppCompatActivity {
         setContentView(R.layout.activity_suit_up);
 
         final ArrayList<Song> songsList = new ArrayList<>();
-        songsList.add(new Song(R.drawable.album, "It's been a hard day work", "The Beatles"));
-        songsList.add(new Song(R.drawable.album, "My Shot", "Lin Manuel Miranda"));
-        songsList.add(new Song(R.drawable.album, "Hoy no me quiero levantar", "Mecano"));
-        songsList.add(new Song(R.drawable.album, "Work work work", "Rihanna"));
-        songsList.add(new Song(R.drawable.album, "Le travail c'est la santé", "Henri Salvador"));
-        songsList.add(new Song(R.drawable.album, "Who runs the world", "Beyoncé"));
-        songsList.add(new Song(R.drawable.album, "Confident", "Demi Lovato"));
+        songsList.add(new Song(R.drawable.album, "It's been a hard day work", "The Beatles", R.raw.song_two));
+        songsList.add(new Song(R.drawable.album, "My Shot", "Lin Manuel Miranda", R.raw.song_three));
+        songsList.add(new Song(R.drawable.album, "Hoy no me quiero levantar", "Mecano", R.raw.song_one));
+        songsList.add(new Song(R.drawable.album, "Work work work", "Rihanna", R.raw.song_five));
+        songsList.add(new Song(R.drawable.album, "Le travail c'est la santé", "Henri Salvador", R.raw.song_four));
+        songsList.add(new Song(R.drawable.album, "Who runs the world", "Beyoncé", R.raw.song_four));
+        songsList.add(new Song(R.drawable.album, "Confident", "Demi Lovato", R.raw.song_three));
 
         //1. create an adapter that loops through the array and put them into a bootstrap list item
         SongAdapter itemsAdapter = new SongAdapter(this, songsList);
@@ -54,11 +54,13 @@ public class SuitUpActivity extends AppCompatActivity {
                 String artist = currentSong.getmArtist();
                 String title = currentSong.getmTitle();
                 int image = currentSong.getmAlbumImage();
+                int raw = currentSong.getmRawResource();
 
                 Intent listViewIntent = new Intent(SuitUpActivity.this, NowPlayingActivity.class);
                 listViewIntent.putExtra("artist", artist);
                 listViewIntent.putExtra("title", title);
                 listViewIntent.putExtra("image", image);
+                listViewIntent.putExtra("raw", raw);
                 startActivity(listViewIntent);
 
             }
